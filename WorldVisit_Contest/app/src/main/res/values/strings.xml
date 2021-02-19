@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WorldVisit_Contest</string>
+    <string name="action_settings">Settings</string>
 </resources>
