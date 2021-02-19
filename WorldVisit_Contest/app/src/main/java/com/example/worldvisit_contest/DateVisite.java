@@ -22,6 +22,13 @@ public class DateVisite extends AppCompatActivity {
             public void onClick(View v) {
                 tvw.setText("Selected Date: "+ picker.getDayOfMonth()+"/"+ (picker.getMonth() + 1)+"/"+picker.getYear());
             }
+
+            public void VersAccueil(View v) {
+                //pour retourner a l’activite principale il suffit seulement d’appler la methode finish() qui vas tuer cette activite
+
+                finish() ;
+
+            }
         });
     }
 }

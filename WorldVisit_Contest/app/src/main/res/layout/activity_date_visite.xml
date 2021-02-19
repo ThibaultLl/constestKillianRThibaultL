@@ -16,7 +16,8 @@
         android:layout_marginLeft="0dp"
         android:layout_marginTop="90dp"
         android:backgroundTint="@color/green"
-        android:text="Get Date" />
+        android:text="Valider"
+        android:onClick="VersAccueil"/>
 
     <TextView
         android:id="@+id/textView1"
