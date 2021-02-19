@@ -13,7 +13,7 @@ public class DateVisite extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_main);
+        setContentView(R.layout.main_activity);
         tvw=(TextView)findViewById(R.id.textView1);
         picker=(DatePicker)findViewById(R.id.datePicker1);
         btnGet=(Button)findViewById(R.id.button1);
