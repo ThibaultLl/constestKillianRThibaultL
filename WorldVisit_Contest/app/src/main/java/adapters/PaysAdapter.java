@@ -66,7 +66,7 @@ public class PaysAdapter extends ArrayAdapter<Pays>{
 
         if (holder.drapeau != null && null != objBean.getDrapeau()
                 && objBean.getDrapeau().trim().length() > 0) {
-            holder.drapeau.setImageResource(c.getResources().getIdentifier("com.example.geoworld:drawable/" + objBean.getDrapeau(), null, null));
+            holder.drapeau.setImageResource(c.getResources().getIdentifier("com.example.worldvisit_contest:drawable/" + objBean.getDrapeau(), null, null));
         }
 
         return view;

@@ -14,15 +14,15 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.os.Bundle;
+import android.view.View;
 
 import objects.Pays;
 
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_main);
+        setContentView(R.layout.main_activity);
         lv = (ListView) findViewById(R.id.list);
         items = new ArrayList<Pays>();
 
@@ -89,6 +89,13 @@ public class MainActivity extends Activity {
                 alert11.show();
             }
         });
+    }
+
+    public void Go(View v) {
+        //on creer une nouvelle intent on definit la class de depart ici this et la class d'arrivé ici SecondActivite
+        Intent intent=new Intent(this,AjouterPays.class);
+        //on lance l'intent, cela a pour effet de stoper l'activité courante et lancer une autre activite ici SecondActivite
+        startActivity(intent);
     }
 
     public ArrayList<Pays> getCountryList (){
